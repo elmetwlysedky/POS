@@ -47,6 +47,7 @@
             <thead>
             <td></td>
             <tr>
+                <th>#</th>
                 <th>{{__('main.products')}}</th>
                 <th>{{__('main.quantity')}}</th>
                 <th>{{__('main.date_of_entry')}}</th>
@@ -56,8 +57,10 @@
             <div>
 
                 <tbody>
+
                 @isset($stock)
                     @foreach($stock as $item)
+                        <td></td>
                         <td>{{$item->product->name}}</td>
                         <td>{{$item->quantity}}</td>
                         <td>{{$item->created_at->format('i : H  --Y/m/d')}}</td>

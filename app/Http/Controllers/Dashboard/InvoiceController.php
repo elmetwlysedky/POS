@@ -18,7 +18,8 @@ class InvoiceController extends Controller
     public function index()
     {
         return view('Dashboard.Invoice.index',[
-        'invoices'=>Invoice::all()]);
+        'invoices'=>Invoice::latest()->paginate(10)
+        ]);
     }
 
     /**

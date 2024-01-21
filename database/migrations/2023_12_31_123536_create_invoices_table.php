@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreignId('client_id')->constrained('clients')->cascadeOnDelete();
             $table->decimal('discount');
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
-            $table->decimal('total');
+            $table->decimal('total',12,2);
             $table->enum('type', array('0', '1'));  // بيع = 0  ..... شراء = 1
             $table->timestamps();
         });

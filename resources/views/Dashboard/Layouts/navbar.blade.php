@@ -28,7 +28,7 @@
         <span class="badge bg-success ml-md-3 mr-md-auto">Online</span>
 
         <ul class="navbar-nav">
-            <a href="{{route('invoice.create')}}" class="nav-item btn btn-link btn-float "><i class="icon-calculator text-primary"></i> <span>{{__('main.invoices')}}</span></a>
+            <a href="{{route('invoice.create')}}" class="nav-item btn btn-dark  "><i class="icon-calculator"></i> <span>{{__('main.invoice')}}</span></a>
 
             <li class="nav-item dropdown">
                 <a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">

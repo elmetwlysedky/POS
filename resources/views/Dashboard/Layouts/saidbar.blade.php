@@ -90,6 +90,18 @@
                 </li>
 
 
+                <li class="nav-item nav-item-submenu">
+                    <a href="#" class="nav-link"><i class="icon-user-plus"></i> <span>{{__('main.add')}} {{__('main.admin')}} </span></a>
+
+                </li>
+
+
+                <li class="nav-item nav-item-submenu">
+                    <a href="{{route('invoice.index')}}" class="nav-link"><i class="icon-calculator">
+                        </i> <span>{{__('main.invoices')}}</span></a>
+                </li>
+
+
 
                 <li class="nav-item nav-item-submenu">
                     <a href="#" class="nav-link"> <i class="fas fa-store-alt mr-2"></i> <span>{{__('main.stock')}}</span></a>
